@@ -8,7 +8,7 @@ var lastColor = 'rgba(255, 128, 0, 0.5)';
 bleep.src = 'media/button-0.wav';*/
 
 var sound = new Howl({
-  urls: ['media/button-0.wav'],
+  urls: ['media/triangle_wave.mp3'],
   autoplay: false,
   volume: 1
 }).play();
