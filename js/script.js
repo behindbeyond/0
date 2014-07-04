@@ -8,8 +8,7 @@ var lastColor = 'rgba(255, 128, 0, 0.5)';
 bleep.src = 'media/button-0.wav';*/
 
 var sound = new Howl({
-  urls: ['media/triangle_wave.mp3'],
-  autoplay: false,
+  urls: ['media/metal_sound wav.wav', 'media/metal_sound ogg.ogg', 'media/metal_sound mp3.mp3'],
   volume: 1
 }).play();
 
@@ -56,8 +55,8 @@ $(function(){
     }
 
     // sounds
-    sounds[0] = new Audio('media/button-0.wav');
-    sounds[0].volume = 1; 
+    /*sounds[0] = new Audio('media/button-0.wav');
+    sounds[0].volume = 1; */
    
 
     // click alerts
@@ -83,7 +82,7 @@ $(function(){
       $('.dialog').removeClass('dialogVisible');
       $('#dialog1').addClass('dialogVisible');
     });
-
+/*
     $(window).keydown(function(event){ // keyboard alerts
         switch (event.keyCode) {
             case 48: // '0' key
@@ -94,6 +93,6 @@ $(function(){
            
         }
     });
-
+*/
     setInterval(drawScene, 200); // loop drawScene
 });
